@@ -24,7 +24,10 @@ filtered_df = df[
     (df["Region"].isin(region_filter)) &
     (df["Product Category"].isin(product_filter))
 ]
-
+st.markdown(
+    f"#### Region Selected: {region_filter}\n"
+    f"#### Product Selected: {product_filter}"
+)
 col1, col2 = st.columns(2)
 
 with col1:
